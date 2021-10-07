@@ -5,11 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backtraking</title>
+
+   <link rel="stylesheet" href="external.css">
+    <!-- <style>
+        body{
+            background-color: beige;
+        }
+        label{
+            font-size: 20px;
+        }
+    </style> -->
 </head>
 <body>
     <h1>Backtraking is an algo</h1>
     <p>Copyright &copy;2002 by David Matuszek</p>
     <p>Backtraking is a form of recursion.</p>
+
+
+    <form>
+        <fieldset>
+            <legend>Login Form</legend>
+            <label id="usernamelabel1">UserName:</label><br>
+            <input type="text" id="username" value="College"><br>
+        
+            <label>Password:</label><br>
+            <input type="text" value="default password" id="password" style="color: violet;"><br>
+
+            <label>Are you sure?</label>
+            <input type="checkbox"><br>
+
+            <input type="button" value="submit">
+        </fieldset>
+    </form>
 
     <p>The usual <em>scenario</em> is that you are faced with a <i>number</i>> of options, and you must choose one of these. After you make your <strong>choice</strong> you will get a new set of <b>options</b>>; just what set of options you get depends on what choice you made.<br> This procedure is repeated over and over until you reach a final state. <br>If you made a <sub>good</sub> sequence of choices, (12 <sup>th</sup>)your final state is a goal state; if you didn't, it isn't.</p>
     <p>Conceptually, you start at the <ins>root</ins> of a tree; the tree probably has some good <del>leaves</del> and some bad leaves, though it may be that the leaves are all good or all bad. You want to get to a good leaf. At each node, beginning with the root, you choose one of its children to move to, and you keep this up until you get to a leaf.</p>
