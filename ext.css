@@ -14,8 +14,45 @@ label{
     background-color: paleturquoise;
     font-family: cursive;
     font-size: 15px;
+    font-weight: 800;
+    font-style: italic;
+    text-decoration-line:  line-through;
+    text-decoration-color: black;
+    text-decoration-style: dashed;
+    margin: 40px 30px 20px 10px;
 }
 
 .fontType{
     font-size: 20px;
+}
+
+.ptag{
+    border:black;
+    border-style: solid;
+    border-width: 40px;
+    border-radius: 10px;
+    padding-left: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    padding-right: 40px;
+}
+.name{
+    border: black solid;
+    height: 300px;
+    /* background-color: aqua; */
+    /* background-image: linear-gradient(black rgb(236, 75, 236)); */
+    background-image: linear-gradient(360deg, purple, #f7c3f7);
+
+}
+.name1{
+    border: black solid;
+    height: 300px;
+    background-image: url("w30.jpg");
+
+}
+.image1{
+    background-image: url("w30.jpg");
+    height: 400px;
+    width: 50%;
+    background-size: cover;
 }
