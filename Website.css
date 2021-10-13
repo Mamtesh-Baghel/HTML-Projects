@@ -7,6 +7,20 @@ body{
     text-align: center;
     line-height: 1.5;
 }
+h2{
+    margin: 0;
+    padding: 1em;
+}
+p{
+    margin: 0;
+    padding: 1em;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .bg{
     position: absolute;
     background-image: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
@@ -16,11 +30,12 @@ body{
 
     height: 450px;
     width: 100%;
-    z-index: -1;
+    z-index: -1;/*to display image behind text*/
     opacity: 0.5;
 }
 #headerId{
     text-align: center;
+    min-height: 450px;
 }
 #headerId h1{
     padding-top: 100px;
@@ -29,7 +44,7 @@ body{
 #headerId p{
     padding: 1em 0;
     margin: 0;
-    color: violet;
+    /* color: violet; */
 }
 .btn{
     background: #333;
@@ -40,4 +55,29 @@ body{
     background: #fff;
     color: #333;
     cursor:pointer;
+}
+
+#section-a{
+    background: #eaeaea;
+    color: #333;
+    padding-bottom: 2em;
+}
+
+#section-b{
+    display: grid;
+    padding: 2em;
+}
+#section-b ul{
+    list-style: none;/**/
+    margin: 0;
+    padding: 0;
+    display: flex; /*to display all li elements in same line */
+    justify-content: space-around;/*to give space b/w li elements */
+
+}
+#section-b li{
+    background: #fff;
+    color: #333;
+    width: 31%;
+    margin-bottom: 1em;
 }
