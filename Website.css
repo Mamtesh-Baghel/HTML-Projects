@@ -68,7 +68,7 @@ img{
     padding: 2em;
 }
 #section-b ul{
-    list-style: none;/**/
+    list-style: none;
     margin: 0;
     padding: 0;
     display: flex; /*to display all li elements in same line */
@@ -80,4 +80,27 @@ img{
     color: #333;
     width: 31%;
     margin-bottom: 1em;
+}
+#section-c{
+    background: #ffffff;
+    color: #333;
+    padding: 2em;
+}
+#section-d{
+    display: flex;
+}
+#section-d .box{
+    padding: 1 em;
+}
+#section-d .box:first-child{
+    background: #2690d4;
+}
+
+#footer{
+    background: #000000;
+    display:flex;
+    padding: 2em;
+}
+#footer div:last-child{
+    margin-left: auto;
 }
