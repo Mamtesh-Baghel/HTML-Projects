@@ -1,0 +1,72 @@
+<head>
+    <!--if items are same in more than one row or coloumn than grid,
+    removes its grid gap -->
+    <style>
+        .container{
+            display: grid;
+            /* display: inline-grid; */
+            grid-gap: 10px;
+            background: gray;
+            /* grid-template-columns: minmax(100px); */
+            /* grid-row-gap: 20px;
+            grid-column-gap: 40px; */
+            /*grid-template-columns: 100px 400px;  two widths as we have two coloumns only*/
+            /* grid-template-columns: 10% 50% 40%; */
+            /* grid-template-columns: 10% 50% 1fr; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            /* grid-template-columns: repeat(3, 1fr); */
+            /*grid-template-columns: repeat(2, minmax(100px)); /* repeat(no_of_colomns, coloumn_width)
+            after defining above property we have to define grid-column: startingcol / span ending col 
+            property in the individual item class style
+            also we can do grid-column-start:starting col and grid-column-end: ending_ col
+            end is exclusive 
+            also we can sepcify col start/row start/col end/row end in grid-area property*/
+            grid-template-rows: 30px 60px;
+            /* grid-template-columns: auto */
+            /* grid-template-areas: 'a b c d'
+                                 'a e c f'
+                                 'a e c f'
+                                 'a . c .'; */
+            /* grid-template-areas: 'a b'
+                                 'c d'
+                                 'e f'; */
+            /* grid-template-areas: 'a b c d e f'; */
+            grid-template-areas: 'a b c'
+                                 'd e f';
+        }
+        .container div{
+            background: tomato;
+        }
+        .item1{
+            grid-area: a;
+        }
+        .item2{
+            grid-area: b;
+        }
+        .item3{
+            grid-area: c;
+        }
+        .item4{
+            grid-area: d;
+        }
+        .item5{
+            grid-area: e;
+        }
+        .item6{
+            grid-area: f;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="item1">item1</div>
+        <div class="item2">item2</div>
+        <div class="item3">item3</div>
+        <div class="item4">item4</div>
+        <div class="item5">item5</div>
+        <div class="item6">item6</div>
+    </div>
+
+    <!-- div.container>div{item$}*6 -->
+</body>
