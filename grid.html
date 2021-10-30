@@ -119,6 +119,17 @@
             padding: 20px 0;
             font-size: 30px;
         }
+
+
+        .iteme{
+            width: 400px;
+            height: 400px;
+            padding-left: 200px;
+            margin-left: 200px;
+            /* box-sizing : to remove the space from the element space not from the UI */
+            /* box-sizing: border-box ; */
+            box-sizing: content-box;
+        }
     </style>
 </head>
 
@@ -155,4 +166,16 @@
         <div class="grid-items50">Footer</div>
     </div>
 
+
+
+
+    <br><br><br>
+    <br>
+    <div class="grid-container2">
+        <div class="itema" style="background-color: red;">Header</div>
+        <div class="itemb" style="background-color: green; float: right;">Menu</div>
+        <div class="itemc" style="background-color: yellow; float: right; clear: both;">Main</div>
+        <div class="itemd" style="background-color: black;">Right</div>
+        <div class="iteme" style="background-color: pink;">Footer</div>
+    </div>
 </body>
