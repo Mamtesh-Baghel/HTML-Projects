@@ -55,6 +55,70 @@
         .item6{
             grid-area: f;
         }
+
+
+
+
+        .grid-item1{
+            grid-area: header;
+        }
+        .grid-item2{
+            grid-area: menu;
+        }
+        .grid-item3{
+            grid-area: main;
+        }
+        .grid-item4{
+            grid-area: right;
+        }
+        .grid-item5{
+            grid-area: footer;
+        }
+
+        .grid-item10{
+            grid-area: header;
+        }
+        .grid-item20{
+            grid-area: menu;
+        }
+        .grid-item30{
+            grid-area: main;
+        }
+        .grid-item40{
+            grid-area: right;
+        }
+        .grid-item50{
+            grid-area: footer;
+        }
+
+        .grid-container{
+            display: grid;
+            grid-template-areas: 'header header header header header header'
+                                 'menu main main main right right'
+                                 'menu footer footer footer footer footer';
+            grid-gap: 10px;
+            background-color: cadetblue;
+            padding: 10px;
+        }
+        .grid-container > div{
+            background-color: darkgrey;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
+        .grid-container1{
+            display: grid;
+            grid-template-columns: 20% 50% 30%;
+            grid-gap: 10px;
+            background-color: black;
+            padding: 10px;
+        }
+        .grid-container1 > div{
+            background-color: darksalmon;
+            text-align: center;
+            padding: 20px 0;
+            font-size: 30px;
+        }
     </style>
 </head>
 
@@ -69,4 +133,26 @@
     </div>
 
     <!-- div.container>div{item$}*6 -->
+
+    <br>
+    <br>
+    <h1>Grid Layout</h1>
+    <p>This grid layout contains six columns and three rows:</p>
+    <div class="grid-container">
+        <div class="grid-item1">Header</div>
+        <div class="grid-item2">Menu</div>
+        <div class="grid-item3">Main</div>
+        <div class="grid-item4">Right</div>
+        <div class="grid-item5">Footer</div>
+    </div>
+
+    <br><br>
+    <div class="grid-container1">
+        <div class="grid-items10">Header</div>
+        <div class="grid-items20">Menu</div>
+        <div class="grid-items30">Main</div>
+        <div class="grid-items40">Right</div>
+        <div class="grid-items50">Footer</div>
+    </div>
+
 </body>
