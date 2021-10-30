@@ -147,12 +147,31 @@ a:hover{
 .snaps img{
     box-shadow: 0 0 10px rgb(0, 0, 0);
 }
-.block-fade{
+/* .block-fade{
     display: grid;
     text-align: center;
     background: linear-gradient( #f3e301, transparent);
     padding: 10;
     box-shadow: 0 0 10px black;
+} */
+.snaps h2{
+    grid-column: 1/ -1;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    gap: 20px;
+    align-items: center;
+}
+.snaps h2::after{
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(45deg, #000000, transparent);
+}
+.snaps h2::before{
+    display: block;
+    content: '';
+    height: 10px;
+    background: linear-gradient(45deg, transparent, black);
 }
 
 
